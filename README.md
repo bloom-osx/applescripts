@@ -91,3 +91,19 @@ tell application "Bloom"
 	set rootURL of front window to "/Users/xxx/Desktop/"
 end tell
 ```
+
+#### Create new windows/tabs
+
+```applescript
+tell application "Bloom"
+	-- Create a new window or tab using the default workspace
+	make new window
+	make new tab
+
+	-- Create a new window and open a specific folder
+	make new window with url "/Users/xxx/Downloads/"
+	
+	-- Create a new tab and open a specific folder
+	make new tab with url "/Users/xxx/Library"
+end tell
+```
