@@ -114,6 +114,19 @@ tell application "Bloom"
 end tell
 ```
 
+#### Manage workspaces
+
+```applescript
+tell application "Bloom"
+	-- Create new workspaces. The possible values for layout are single, l1r1, t1b1, l1m1r1, t1m1b1, h4x1, v4x1, l1r2, l2r1, t1b2, t2b1, g2x2.
+	make new workspace using name "New Workspace" with layout "l1r1" with urls {"/Users/xxx/Documents", "/Users/xxx/Movies"}
+	-- Remove workspace
+	remove workspace "Workspace Name"
+	-- Duplicate a workspace
+	duplicate workspace "Workspace" with name "New Workspace"
+end tell
+```
+
 #### Select files
 
 ```applescript
